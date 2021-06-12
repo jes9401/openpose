@@ -1,0 +1,15 @@
+[git-Hub]
+
+통합자료 : 
+1. https://github.com/jrterven/KinZ-Python
+
+
+파생자료 : 
+1. https://github.com/etiennedub/pyk4a
+- Azure Kinect + Python (Window)
+
+2. https://github.com/hexops/Azure-Kinect-Python
+- Azure Kinect + Python
+
+3. https://docs.microsoft.com/en-us/azure/kinect-dk/sensor-sdk-download
+- Azure Kinect SDK Installation (Linux)
