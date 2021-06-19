@@ -1,0 +1,38 @@
+input {
+   azureblob
+     {
+         storage_account_name => "hysdb"
+         storage_access_key => "P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A=="
+         container => "hrlim1202"
+         codec => "json"
+         file_head_bytes => 12
+         file_tail_bytes => 2
+     }
+   }
+filter {
+}
+output {
+  stdout { codec => rubydebug }
+  elasticsearch {
+    hosts => "localhost"
+    index => "nsg-flow-logs"
+  }
+}  
+===========================================
+input {
+    azureblob
+    {
+        storage_account_name => "hysdb"
+        storage_access_key => "P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A=="
+        container => "hrlim1202"
+        codec => line
+    }
+}    
+filter {
+}
+output {
+    file {
+        path => '/var/tmp/logstash-file-output'
+        codec => rubydebug
+    }
+} 
