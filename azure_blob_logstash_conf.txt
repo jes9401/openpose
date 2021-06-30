@@ -1,0 +1,44 @@
+input {
+    azure_blob_storage
+    {
+        storageaccount => ""
+        access_key => ""
+        container => ""
+        codec => line
+        interval => 10
+        addfilename => true
+        path_filters => ["**/*GYROSCOPE.txt"]
+        tags => "GYRO"
+    }
+
+    azure_blob_storage
+    {
+        storageaccount => ""
+        access_key => ""
+        container => ""
+        codec => line
+        interval => 10
+        addfilename => true
+        path_filters => [ "**/*ACCELEROMETER.txt"]
+        tags => "ACC"
+    }
+
+}
+filter {
+}
+output {
+    if "ACC" in [tags]{
+        file {
+              path => "/home/az_ACC/%{filename}"
+              codec => line {format => "%{message}"}
+        }
+    }
+    if "GYRO" in [tags]{
+         file {
+              path => "/home/az_GYRO/%{filename}"
+              codec => line {format => "%{message}"}
+        }
+
+    }
+
+}
