@@ -1,9 +1,9 @@
 input {
    azureblob
      {
-         storage_account_name => "hysdb"
-         storage_access_key => "P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A=="
-         container => "hrlim1202"
+         storage_account_name => ""
+         storage_access_key => ""
+         container => ""
          codec => "json"
          file_head_bytes => 12
          file_tail_bytes => 2
@@ -22,9 +22,9 @@ output {
 input {
     azureblob
     {
-        storage_account_name => "hysdb"
-        storage_access_key => "P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A=="
-        container => "hrlim1202"
+        storage_account_name => ""
+        storage_access_key => ""
+        container => ""
         codec => line
     }
 }    

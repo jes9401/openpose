@@ -6,7 +6,6 @@ import glob
 
 
 # cmd에 이 명령어 실행하고 진행하세요. 연결 문자열 저장하는 내용입니다
-# setx AZURE_STORAGE_CONNECTION_STRING "DefaultEndpointsProtocol=https;AccountName=hysdb;AccountKey=P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A==;EndpointSuffix=core.windows.net"
 
 # cmd에 이 명령어 실행하세요
 # pip install azure-storage-blob

@@ -4,13 +4,7 @@ import glob
 import time
 import pandas as pd
 
-# cmd에 이 명령어 실행하고 진행하세요. 연결 문자열 저장하는 내용입니다
-# setx AZURE_STORAGE_CONNECTION_STRING "DefaultEndpointsProtocol=https;AccountName=hysdb;AccountKey=P3u69Z/annyhB5+73QfQw8P7Ks+r9anFxaYzBkTz7mgFWssNAHMYJdov7692Q/3PS5D39MUOZY+DYdz0OmkJ9A==;EndpointSuffix=core.windows.net"
-# setx AZURE_STORAGE_CONNECTION_STRING "DefaultEndpointsProtocol=https;AccountName=hysdb2;AccountKey=5sUVtfucTcwdJ/cf3GgiCiOS4BecVe2pyjx3pJ8S34XW2JZIp5ebCl8JQx4OeggT5/rmmb7L0btZOPWhhIUtOg==;EndpointSuffix=core.windows.net"
 
-
-# cmd에 이 명령어 실행하세요
-# pip install azure-storage-blob
 
 
 local_path='./test/'
@@ -97,23 +91,5 @@ while True:
         
     time.sleep(3)
 
-# 전체 삭제
-#elif n == 2:
-#    print("진짜 삭제하려면 엔터를 눌러주세요")
-#    input()
-#    try:
-#        print("삭제중...")
-#        for blob in blob_list:
-#            if blob.name == 'data/registry.da':
-#                print('data는 삭제 안해용~')
-#           else:
-#                print(blob.name,'삭제')
-#                container_client.delete_blobs(blob.name)
-#        print('삭제완료')
-#           
-#    except Exception as ex:
-#        print('삭제 실패')
-#        print('Exception:')
-#        print(ex)
 
     

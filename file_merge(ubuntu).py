@@ -6,10 +6,6 @@ import pandas as pd
 
 
 
-# cmd에 이 명령어 실행하세요
-# pip install azure-storage-blob
-
-
 local_path='./accgy/'
 all_path = './all/'
 gyro_list = glob.glob(os.path.join(local_path, '*GYROSCOPE.csv'))
