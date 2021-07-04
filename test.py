@@ -2,6 +2,7 @@ import glob
 import pandas as pd
 import os
 local_path = './'
+# csv파일 변
 file_list = glob.glob(os.path.join(local_path, '*.txt'))
 file_list = list(map(lambda x:x.split('\\')[-1],file_list))
 
