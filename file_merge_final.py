@@ -189,10 +189,10 @@ while True:
                 same_list.append(x)
             if p_time in x:
                 same_list.append(x)
-            if f_time in x:
-                same_list.append(x)
+            #if f_time in x:
+            #    same_list.append(x)
 
-        if len(same_list)==3:
+        if len(same_list)==2:
             for s in range(len(same_list)):
                 if s==0:
                     df_all = pd.read_csv(all_path+same_list[s])
